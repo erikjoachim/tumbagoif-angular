@@ -1,22 +1,43 @@
-<div class="container">
-  <h1 class="text-center">
-    Hej och välkommen till
-    <span href="/" class="hover-underline-animation user-select-none"
-      >Tumba Gymnastik & Idrottsförening!</span
-    >
+<div class="container mt-3">
+  <h1 class="text-center">Hej och välkommen till</h1>
+  <h1
+    class="text-center text-decoration-underline user-select-none text-danger"
+  >
+    Tumba Gymnastik & Idrottsförening!
   </h1>
-  <div class="row mt-5">
+  <div class="row mt-4">
     <div class="col-md-6 mb-3">
-      <app-card [label]="'Tumba Basket'"></app-card>
+      <app-card
+        [label]="'Tumba Gymnastik'"
+        [email]="'info@tumbagoif.se'"
+        [websiteUrl]="'www.tumbagymnastik.se'"
+        [imageUrl]="'../assets/images/tumba-gymnastik.png'"
+      ></app-card>
     </div>
     <div class="col-md-6 mb-3">
-      <app-card [label]="'Tumba Gymnastik'"></app-card>
+      <app-card
+        [label]="'Tumba Gymmix'"
+        [email]="'info@tumbagoif.se'"
+        [websiteUrl]="'www.tumbagymnastik.se/start/?ID=247932'"
+        [specialWebsiteUrlName]="'www.tumbagymnastik.se'"
+        [imageUrl]="'../assets/images/tumba-gymnastik.png'"
+      ></app-card>
     </div>
     <div class="col-md-6 mb-3">
-      <app-card [label]="'Tumba Innebandy'"></app-card>
+      <app-card
+        [label]="'Tumba Innebandy'"
+        [email]="'example@example.com'"
+        [websiteUrl]="'www.svenskalag.se/tumbainnebandy'"
+        [imageUrl]="'../assets/images/tumba-innebandy.png'"
+      ></app-card>
     </div>
     <div class="col-md-6 mb-3">
-      <app-card [label]="'Tumba Gymmix'"></app-card>
+      <app-card
+        [label]="'Tumba Basket'"
+        [email]="'example@example.com'"
+        [websiteUrl]="'www.tumbabasket.se'"
+        [imageUrl]="'../assets/images/tumba-basket.png'"
+      ></app-card>
     </div>
   </div>
 </div>

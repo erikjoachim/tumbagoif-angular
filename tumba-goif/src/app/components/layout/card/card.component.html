@@ -1,7 +1,21 @@
-<div class="card my-3">
+<div class="card mt-3">
   <div class="card-body">
-    <h5 class="card-title">{{ label ?? "Label missing..." }}</h5>
-    <p class="card-text">{{ text ?? exampleText }}</p>
-    <a href="#" class="btn btn-danger position-absolute">Go somewhere</a>
+    <img
+      [src]="imageUrl"
+      alt="Not loaded properly..."
+      class="img-fluid rounded"
+    />
+    <h4 class="card-title d-flex justify-content-center mt-3">{{ label }}</h4>
+    <p class="card-text mt-2">{{ text ?? exampleText }}</p>
+    <div class="d-flex align-items-center">
+      <mat-icon>language_outlined</mat-icon>
+      <a class="ms-2" [href]="'https://' + websiteUrl" target="_blank">{{
+        specialWebsiteUrlName ?? websiteUrl
+      }}</a>
+    </div>
+    <div class="d-flex align-items-center">
+      <mat-icon>mail_outlined</mat-icon>
+      <a class="ms-2" [href]="'mailto:' + email">{{ email }}</a>
+    </div>
   </div>
 </div>
